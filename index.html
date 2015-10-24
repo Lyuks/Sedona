@@ -11,7 +11,7 @@
 			<ul>
 				<li>информация</li>
 				<li>фото и видео</li>
-				<li><img src="img/logo.png" alt="" width="138" height="70"></li>
+				<!-- <li><img src="img/logo.png" alt="" width="138" height="70"></li> -->
 				<li>карта штата</li>
 				<li>гостиницы</li>
 			</ul>
@@ -26,21 +26,20 @@
 			<h2>седона - небольшой городок в аризоне, заслуживающий большего!</h2>
 			<p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
 		</div>
-		<div class="photo-feature">
-			<div class="col-4">
+		<div class="clearfix">
+			<div class="first-feature col-4">
 				<h2>Настоящий городок</h2>
 				<p>№ 1</p>
 				<p>седона - не аттракцион для туристов, там течет своя жизнь</p>
 			</div>
-
-			<div class="col-8">
-				<a href=""><img src="img/real-city.jpg" alt="" width="512" height="256"></a>
+			<div class="photo-feature-top col-8">
+				<a href=""><img src="img/real-city.jpg" alt=""></a>
 			</div>
 		</div>
 
 <!-- блок фичи №1 с картинкой -->
 
-		<div class="feature-first-row">
+		<div class="feature-first-row  clearfix">
 			<div class="col-4">
 				<h2 class="sprite-home">жилье</h2>
 				<p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -55,11 +54,11 @@
 			</div>
 		</div>
 
-		<div class="photo-feature">
-			<div class="col-8">
-				<a href=""><img src="img/diablo-bridge.jpg" alt="" width="512" height="256"></a>
+		<div class="photo-feature-bottom clearfix">
+			<div class="photo-feature-bottom col-8">
+				<a href=""><img src="img/diablo-bridge.jpg" alt="" width="" height=""></a>
 			</div>
-			<div class="col-4">
+			<div class="second-feature col-4">
 				<h2>там есть мост дьявола</h2>
 				<p>№ 2</p>
 				<p>да, по нему можно пройти! если конечно вы осмелитесь</p>
@@ -68,7 +67,7 @@
 
 <!-- блок фичи №2 с картинкой -->
 
-		<div class="feature-second-row">
+		<div class="feature-second-row  clearfix">
 			<div class="col-4">
 				<h2>небольшая площадь</h2>
 				<p>№ 3</p>
@@ -89,25 +88,27 @@
 		<div class="hotel-search">
 			<p class="interest">Заинтересовались?</p>
 			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-			<a href="#0form.html" class="search">Поиск гостиницы в седоне</a>
-			<div class="search-form">
-				<div>
-					<form action="/echo" method="post">
-						<label for="">дата заезда</label>
-						<input type="date" name="begin-date" id="begin-date">
-						<label for="">дата выезда</label>
-						<input type="date" name="end-date" id="end-date">
+			
+		</div>
 
-						<label for="adult">взрослые</label>
-						<input type="number" name="adult" id="adult" step="1" min="0">
-						<label for="children">дети</label>
-						<input type="number" name="children" id="children" step="1" min="0">
+		<a href="#0form.html" class="search">Поиск гостиницы в седоне</a>
+		<div class="search-form">
+			<div>
+				<form action="/echo" method="post">
+					<label for="">дата заезда</label>
+					<input type="date" name="begin-date" id="begin-date">
+					<label for="">дата выезда</label>
+					<input type="date" name="end-date" id="end-date">
 
-						<button type="submit">Найти</button>
-					</form>
-				</div>
+					<label for="adult">взрослые</label>
+					<input type="number" name="adult" id="adult" step="1" min="0">
+					<label for="children">дети</label>
+					<input type="number" name="children" id="children" step="1" min="0">
+					<button type="submit">Найти</button>
+				</form>
 			</div>
 		</div>
+		
 			
 		<div class="map">
 			<img src="img/map.png" alt="" width="768" height="748">
@@ -115,16 +116,18 @@
 	</main>
 
 	<footer>
-		<div class="col-4">
-			<p class="hashtag">#visitsedona</p>
-		</div>
-		<div class="col-4">
-			<a href="#" class="social-btn icon-twitter"></a>
-     		<a href="#" class="social-btn icon-facebook"></a>
-      		<a href="#" class="social-btn icon-youtube"></a>
-		</div>
-		<div class="col-4">
-			<a href="#0"><img src="img/htmlacademy.png" alt="" width="195" height="39"></a>
+		<div class="footer-wrapper  clearfix">
+			<div class="hashtag  col-4">
+				<p>#visitsedona</p>
+			</div>
+			<div class="social  col-4">
+				<a href="#" class="social-btn icon-twitter"></a>
+	     		<a href="#" class="social-btn icon-facebook"></a>
+	      		<a href="#" class="social-btn icon-youtube"></a>
+			</div>
+			<div class="copyrights  col-4">
+				<a href="#0"><img src="img/htmlacademy.png" alt="" width="195" height="39"></a>
+			</div>	
 		</div>
 	</footer>
 </body>
