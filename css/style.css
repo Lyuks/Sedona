@@ -67,10 +67,15 @@
 	-webkit-background-size: cover;
   			background-size: cover;
 }
-.main-photo div{
-	margin: auto;
-	padding-top: 80px;
-	width: 458px;
+.main-photo:after {
+	content: '';
+	background: transparent url('../img/mask.png');
+	height: 54px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
 }
 .main-photo img{
 	
