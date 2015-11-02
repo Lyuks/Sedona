@@ -32,8 +32,8 @@
 
 			<div class="photo-feature clearfix">
 				<div class="photo-feature-text col-4">
-					<h2>Настоящий городок</h2>
-					<p>№ 1</p>
+					<h2>Настоящий<br/>городок</h2>
+					<p class="photo-feature-number">— № 1 —</p>
 					<p>седона - не аттракцион для туристов, <br/>там течет своя жизнь</p>
 				</div>
 				<div class="photo-feature-img col-8">
@@ -63,8 +63,8 @@
 					<img src="img/feature-2.jpg" width="100%" height="auto" alt="">
 				</div>
 				<div class="photo-feature-text col-4">
-					<h2>там есть мост дьявола</h2>
-					<p>№ 2</p>
+					<h2>там есть<br/>мост дьявола</h2>
+					<p class="photo-feature-number">— № 2 —</p>
 					<p>да, по нему можно пройти!<br/>если конечно вы осмелитесь</p>
 				</div>
 			</div>
@@ -74,17 +74,17 @@
 			<div class="second-row-feature  clearfix">
 				<div class="second-row-feature-item  col-4">
 					<h2 class="feature-title">небольшая площадь</h2>
-					<p>№ 3</p>
+					<p>— № 3 —</p>
 					<p>все достопримеча-<br/>тельности находятся очень близко</p>
 				</div>
 				<div class="second-row-feature-item  col-4">
 					<h2 class="feature-title">красивая дорога</h2>
-					<p>№ 4</p>
+					<p>— № 4 —</p>
 					<p>ехать в седону из лас-вегаса совсем<br/> не скучно!</p>
 				</div>
 				<div class="second-row-feature-item  col-4">
 					<h2 class="feature-title">мало туристов</h2>
-					<p>№ 5</p>
+					<p>— № 5 —</p>
 					<p>большинство едет в гранд каньон и<br/>толпится там!</p>
 				</div>
 			</div>
@@ -97,33 +97,27 @@
 			<a class="search-btn" href="#0form.html">Поиск гостиницы в седоне</a>
 
 
-			<div class="search-form">
-				<form action="/echo" method="post">
-					<div class="search-form-container">			
-						<div class="search-form-row">
-							<label for="begin-date">дата заезда:</label>
-							<input type="date" name="begin-date" id="begin-date">
+			
+			<form  class="search-form" action="/echo" method="post">
+				<div class="search-form-container">
+					<label for="begin-date">дата заезда:</label>
+					<input type="date" name="begin-date" id="begin-date">
+					<label for="end-date">дата выезда:</label>
+					<input type="date" name="end-date" id="end-date">
+					<div class="search-form-row  clearfix">
+						<div class="adult-input">
+							<label for="adult">взрослые:</label>
+							<input type="number" name="adult" id="adult" step="1" min="0" value="2">
 						</div>
-
-						<div class="search-form-row">
-							<label for="end-date">дата выезда:</label>
-							<input type="date" name="end-date" id="end-date">
+						<div class="children-input">
+							<label for="children">дети:</label>
+							<input type="number" name="children" id="children" step="1" min="0" value="0">
 						</div>
-
-						<div class="search-form-row  clearfix">
-							<div class="adult-input">
-								<label for="adult">взрослые:</label>
-								<input type="number" name="adult" id="adult" step="1" min="0">
-							</div>
-							<div class="children-input">
-								<label for="children">дети:</label>
-								<input type="number" name="children" id="children" step="1" min="0" value="2">
-							</div>
-						</div>
-						<a class="submit-btn" href="#">Найти</a>
 					</div>
-				</form>
-			</div>
+					<a class="submit-btn" href="#">Найти</a>
+				</div>
+			</form>
+
 			<div class="map">
 				
 			</div>
@@ -131,11 +125,11 @@
 
 		<footer>
 			<div class="footer-wrapper  clearfix">
-				<div class="hashtag  col-4">#visitsedona</div>
+				<div class="hashtag  col-4">#visitsedona </div>
 				<div class="social  col-4">
-					<a href="#" class="social-btn icon-twitter"></a>
-		     		<a href="#" class="social-btn icon-facebook"></a>
-		      		<a href="#" class="social-btn icon-youtube"></a>
+					<a href="#" class="social-btn"><i class="icon-twitter"></i></a>
+		     		<a href="#" class="social-btn"><i class="icon-facebook"></i></a>
+		      		<a href="#" class="social-btn"><i class="icon-youtube"></i></a>
 				</div>
 				<div class="copyrights  col-4">
 					<a href="#0"><img src="img/copyright.png" alt="" width="195" height="39"></a>
