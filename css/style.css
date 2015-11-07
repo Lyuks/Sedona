@@ -1,10 +1,4 @@
-@font-face {
-    font-family: 'PT Sans';
-    src: url('../fonts/PTsans/ptsans.eot');
-    src: url('../fonts/PTsans/ptsans.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/PTsans/ptsans.woff') format('woff'),
-         url('../fonts/PTsans/ptsans.ttf') format('truetype');
-}
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700italic,700,400italic&subset=latin,cyrillic);
 
 @font-face {
   font-family: 'symbols-sedona';
@@ -73,7 +67,7 @@
 body {
 	box-sizing: border-box;
 	font-size: 14px;
-	font-family: PT Sans;
+	font-family: PT Sans, "Verdana", "Times New Roman", sans-serif;
 	text-transform: uppercase;
 	line-height: 21px;
 }
@@ -108,7 +102,7 @@ body {
 .main-navigation li{
 	display: inline-block;
     width: 20%;
-    padding-top: 22px;
+    padding-top: 18px;
     padding-bottom: 5px;
     font-size: 14px;
     line-height: 21px;
@@ -148,7 +142,7 @@ body {
 }
 .main-navigation .logo{
     position: absolute;
-    top: -9px;
+    top: -11px;
     left: 50%;
     z-index: 10;
     margin-left: -68px;
@@ -165,7 +159,7 @@ body {
   			background-size: cover;
 }
 .main-photo img{
-	margin-top: 80px;
+	margin-top: 77px;
 }
 .main-photo:after {
 	content: '';
@@ -182,8 +176,8 @@ body {
 .main-text h2{
 	width: 50%;
 	margin: 0 auto;
-	padding-top: 53px;
-	padding-bottom: 36px;
+	padding-top: 60px;
+	padding-bottom: 27px;
 	font-weight: bold;
 	font-size: 21px;
 	text-align: center;
@@ -193,7 +187,7 @@ body {
 	width: 50%;
 	margin: 0 auto;
 	text-align: center;
-	padding-bottom: 57px;
+	padding-bottom: 51px;
 	line-height: 26px;
 }
 .photo-feature{
@@ -208,7 +202,7 @@ body {
 }
 .photo-feature-text p{
 	margin: 0;
-	padding-top: 29px;
+	padding-top: 23px;
 	line-height: 21px;
 }
 .photo-feature-text p:first-child{
@@ -231,11 +225,15 @@ body {
 }
 .first-row-feature-item{
 	float: left;
-	position: relative;
-	text-align: center;
-	width: 33%;
-	padding-top: 164px;
-	padding-bottom: 88px;
+    position: relative;
+    text-align: center;
+    width: 33.33%;
+    padding-top: 164px;
+    padding-bottom: 71px;
+    margin-top: -22px;
+}
+.first-row-feature-item p{
+	padding-top: 6px;
 }
 .first-row-feature-item:before{
 	content: '';
@@ -249,23 +247,23 @@ body {
 .house-sprite:before {
     width: 75px;
     height: 72px;
-    background-position: -119px -15px;
+    background-position: -117px -15px;
 }
 
 .food-sprite:before{
-	width: 74px;
+	width: 80px;
     height: 70px;
-    background-position: -15px -15px;
+    background-position: -12px -15px;
 }
 .souvenirs-sprite:before {
-	width: 64px;
-    height: 76px;
-    background-position: -224px -15px;
+	width: 82px;
+    height: 80px;
+    background-position: -216px -15px;
 }
 .second-row-feature{
 	width: 100%;
-	padding-top: 50px;
-	padding-bottom: 64px;
+	padding-top: 30px;
+	padding-bottom: 48px;
 	background-color: #eeeeee;
 }
 .second-row-feature div{
@@ -273,28 +271,30 @@ body {
 	text-align: center;
 }
 .second-row-feature p{
-	padding-top: 20px;
+	padding-top: 5px;
 }
 .search-text-block p{
 	text-align: center;
 	line-height: 24px;
 }
 .interest{
+	padding-top: 24px;
 	font-size: 30px;
 	font-weight: bold;
 }
 
 .search-btn{
 	display: block;
-	margin:0 auto;
-	width: 568px;
-	padding: 35px 0;
-	text-align: center;
-	text-decoration: none;
-	background-color: #766357;
-	color: #fff;
-	font-size: 21px;
-	font-weight: bold;
+    margin: 0 auto;
+    width: 568px;
+    padding: 33px 0;
+    text-align: center;
+    text-decoration: none;
+    background-color: #766357;
+    color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 48px;
 
 }
 .footer-wrapper{
@@ -304,11 +304,11 @@ body {
 }
 .hashtag{
 	float: left;
-	padding-top: 10px;
-	text-align: center;
-	font-size: 21px;
-	font-weight: bold;
-	line-height: 26px;
+    padding-top: 7px;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
 }
 .social{
 	float: left;
@@ -317,6 +317,7 @@ body {
 }
 .copyrights{
 	float: right;
+	padding-top: 2px;
 	text-align: center;
 }
 .social-btn{
@@ -372,6 +373,7 @@ body {
 }
 .search-form-container{
 	padding: 55px;
+	padding-top: 48px;
 }
 .search-form-container>label{
 	display: inline-block;
@@ -401,7 +403,7 @@ input[type="date"]{
     text-transform: uppercase;
     padding-left: 22px;
     padding-top: 14px;
-    padding-bottom: 14px;
+    padding-bottom: 4px;
     padding-right: 41px;
 }
 input[type="number"]:focus,
@@ -419,6 +421,9 @@ input[type="date"]:active {
 	float: right;
 	position: relative;
 	width: 50%;
+}
+.search-form-row{
+	margin-bottom: 23px;
 }
 .search-form-row label{
 	width: 95px;
@@ -735,6 +740,7 @@ input[type="date"]:active {
 .form-row input[type="checkbox"]:checked+label:before{
 	content: '\2611';
 }
+
 .arrows-link a{
 	font-size: 23px;
 	line-height: 20px;
