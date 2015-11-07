@@ -70,7 +70,6 @@
 .icon-minus:before { content: '\e802'; } /* '' */
 .icon-youtube:before { content: '\f39e'; } /* '' */
 
-
 body {
 	box-sizing: border-box;
 	font-size: 14px;
@@ -114,9 +113,26 @@ body {
     font-size: 14px;
     line-height: 21px;
 }
+
 .main-navigation a{
 	text-decoration: none;
 	color: #000;
+}
+.main-navigation a:hover{
+	color: #81b3d2;
+}
+.main-navigation a:active{
+	color: #cacaca;
+}
+
+.main-navigation a.active{
+	color: #766357;
+}
+.main-navigation a.active:hover{
+	color: #604e43;
+}
+.main-navigation a.active:active{
+	color: #dedad8;
 }
 .main-navigation li:first-child,
 .main-navigation li:nth-child(2){
@@ -133,9 +149,9 @@ body {
 .main-navigation .logo{
     position: absolute;
     top: -9px;
-    margin-left: 36px;
+    left: 50%;
     z-index: 10;
-    margin-right: 36px;
+    margin-left: -68px;
 }
 .main-photo{
 	position: relative;
@@ -292,6 +308,7 @@ body {
 	text-align: center;
 	font-size: 21px;
 	font-weight: bold;
+	line-height: 26px;
 }
 .social{
 	float: left;
@@ -308,6 +325,15 @@ body {
 	height: 48px;
 	display: inline-block;
 	background-color: #81b3d2;
+}
+.social-btn:hover{
+	background-color: #669ec0;
+}
+.social-btn:active{
+	background-color: #5496bd;
+}
+.social i:active{
+	color: #94b9d2;
 }
 .search-form{
 	margin: 0 auto;
@@ -335,6 +361,13 @@ body {
 	color: #fff;
 	text-align: center;
 	font-size: 21px;
+}
+.submit-btn:hover{
+	background-color: #669ec0;
+}
+.submit-btn:active{
+	background-color: #5496bd;
+	color: #94b9d2;
 }
 .search-form-container{
 	padding: 55px;
@@ -381,16 +414,14 @@ input[type="date"]:active {
 	float: right;
 	width: 50%;
 }
-.children-input label{
-	padding-left: 54px;
-}
 .search-form-row label{
 	width: 95px;
-    padding-right: 13px;
-	}
-.adult-input label{
-	padding-right: 22px;
+	display: inline-block;
 }
+.children-input label{
+	padding-left: 54px;
+	width: 50px;
+	}
 .filters-block{
 	width: 88%;
 	padding-left: 6%;
@@ -464,19 +495,42 @@ input[type="date"]:active {
 	padding-right: 55px;
 	font-weight: bold;
 	font-size: 21px;
+	line-height: 26px;
 }
 .sorting-types{
 	float: left;
 	padding-top: 5px;
+	line-height: 18px;
 }
 .arrows-link{
 	float: right;
 }
-.sorting-types a{
+.sorting-list{
+	margin: 0;
+	padding: 0;
+}
+.sorting-list li{
+	display: inline-block;
 	padding-right: 32px;
+	
+}
+.sorting-list a{
 	font-size: 12px;
 	line-height: 18px;
 	text-decoration: none;
+	color: #cacaca;
+	border-bottom: 1px dotted #81b3d2;
+}
+.sorting-types a:hover{
+	color: #81b3d2;
+}
+.sorting-list a.active{
+	color: #81b3d2;
+	border: none;
+}
+.sorting-list a:active{
+	color: #000;
+	border: none;
 }
 .sorting-types span{
 	padding-right: 40px;
@@ -508,6 +562,12 @@ input[type="date"]:active {
 	padding: 5px 17px;
 	font-weight: bold;
 }
+.detail-btn:hover{
+	background-color: #669ec0;
+}
+.detail-btn:active{
+	background-color: #5496bd;
+}
 .reserve-btn{
 	display: block;
 	background-color: #766357;
@@ -516,12 +576,24 @@ input[type="date"]:active {
 	padding: 5px 17px;	
 	font-weight: bold;
 }
+.reserve-btn:hover{
+	background-color: #604e43;
+}
+.reserve-btn:active{
+	background-color: #503e33; 
+}
 .hotel-parametres {
 	font-size: 14px;
 }
 .hotel-info h2{
 	font-size: 21px;
 	margin: 0;
+}
+.hotel-info h2:hover{
+	color: #81b3d2;
+}
+.hotel-info h2:active{
+	color: #cacaca;
 }
 .hotel-parametres p{
 	margin-top: 3px;
@@ -603,11 +675,16 @@ input[type="date"]:active {
 }
 .range-controls .toggle-max{
 	left: 81%;
-	background-color: #1c4f80;
+	background-color: #ababab;
 }
 .range-controls .toggle-min{
 	background-color: #ababab;
 	}
+.toggle-max:hover,
+.toggle-min:hover{
+	background-color: #1c4f80;
+	cursor: pointer;
+}	
 .scale .bar{
 	width: 85%;
 	height: 2px;
@@ -655,7 +732,18 @@ input[type="date"]:active {
 .arrows-link a{
 	font-size: 23px;
 	line-height: 20px;
+	color: #cccccc;
 }
+.arrows-link .active{
+	color: #81b3d2;
+}
+.arrows-link a:hover{
+	color: #000;
+}
+.arrows-link a:active{
+	color: #81b3d2;
+}
+
 .social i{
 	color: white;
 	font-size: 19px;
@@ -672,15 +760,10 @@ input[type="date"]:active {
 	opacity: .3;
 	padding-right: 9px;
 }
-
-
-
-/*////////
-.infrastructure-filter input{
-	display: none;
+.search-form-container input[type="date"]:hover{
+	background-color: #ebebeb;
 }
-
-input:checked + span:before {
-	content: '\313s';
-}*/
-/*##############*/
+.search-form-container input[type="date"]:active{
+	background-color: #fff;
+	outline: 2px solid #e5e5e5;
+}
