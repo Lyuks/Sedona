@@ -336,12 +336,13 @@ body {
 	color: #94b9d2;
 }
 .search-form{
-	margin: 0 auto;
+	position: absolute;
+    left: 50%;
+    margin-left: -284px;
     width: 568px;
     font-size: 14px;
     font-weight: bold;
     box-shadow: 0 0 20px -6px;
-    z-index: 100;
     background: white;
 
 }
@@ -374,7 +375,9 @@ body {
 }
 .search-form-container>label{
 	display: inline-block;
+	position: relative;
 	width: 95px;
+
 }
 .search-form input{
 	margin-bottom: 29px;
@@ -393,12 +396,13 @@ body {
 	}
 input[type="date"]{
 	background-color: #f2f2f2;
-    width: 331px;
+    width: 290px;
     border: none;
     text-transform: uppercase;
     padding-left: 22px;
     padding-top: 14px;
     padding-bottom: 14px;
+    padding-right: 41px;
 }
 input[type="number"]:focus,
 input[type="number"]:active,
@@ -408,10 +412,12 @@ input[type="date"]:active {
 }
 .adult-input{
 	float: left;
+	position: relative;
 	width: 50%;
 }
 .children-input{
 	float: right;
+	position: relative;
 	width: 50%;
 }
 .search-form-row label{
@@ -752,18 +758,55 @@ input[type="date"]:active {
 	left: 10px;
 	bottom:13px;
 }
-.search-form-container label+input[type="date"]:after{
+
+/*.search-form-container label+input[type="date"]:after{
 	content:'\e800';
 	font-family: "symbols-sedona";
 	display: inline-block;
 	font-size: 21px;
 	opacity: .3;
 	padding-right: 9px;
-}
+}*/
 .search-form-container input[type="date"]:hover{
 	background-color: #ebebeb;
 }
 .search-form-container input[type="date"]:active{
 	background-color: #fff;
 	outline: 2px solid #e5e5e5;
+}
+.search-form-container i{
+	position: absolute;
+	right: -350px;
+    font-size: 21px;
+    opacity: .3;
+}
+.search-form-container i:hover{
+	opacity: 1;
+}
+.search-form-container i:active{
+	color: #81b3d2;
+}
+.adult-input i:first-child{
+	position: absolute;
+	font-size: 14px;
+	left: 112px;
+    top: 14px;
+}
+.adult-input i{
+	position: absolute;
+    font-size: 14px;
+    right: 25px;
+    top: 14px;
+}
+.children-input i:first-child{
+	position: absolute;
+	font-size: 14px;
+	left: 121px;
+    top: 14px;
+}
+.children-input i{
+	position: absolute;
+    font-size: 14px;
+    right: 15px;
+    top: 14px;
 }

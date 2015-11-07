@@ -100,16 +100,20 @@
 			
 			<form  class="search-form" action="/echo" method="post">
 				<div class="search-form-container">
-					<label for="begin-date">дата заезда:</label>
+					<label for="begin-date">дата заезда:<i class="icon-calendar"></i></label>
 					<input type="date" name="begin-date" id="begin-date">
-					<label for="end-date">дата выезда:</label>
+					<label for="end-date">дата выезда:<i class="icon-calendar"></i></label>
 					<input type="date" name="end-date" id="end-date">
 					<div class="search-form-row  clearfix">
 						<div class="adult-input">
+							<i class="icon-minus"></i>
+							<i class="icon-plus"></i>
 							<label for="adult">взрослые:</label>
 							<input type="number" name="adult" id="adult" step="1" min="0" value="2">
 						</div>
 						<div class="children-input">
+							<i class="icon-minus"></i>
+							<i class="icon-plus"></i>
 							<label for="children">дети:</label>
 							<input type="number" name="children" id="children" step="1" min="0" value="0">
 						</div>
