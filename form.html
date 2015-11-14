@@ -4,11 +4,23 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<meta charset="UTF-8">
-	<title>Form</title>
+	<title>Sedona index</title>
 </head>
 <body>
-	<form  class="search-form" action="/echo" method="post">
-		<div class="search-form-container">
+	<div class="container">
+		<header>
+			<nav>			
+				<ul class="main-navigation">
+					<li><a href="#">информация</a></li>
+					<li><a href="#">фото и видео</a></li>
+					<li><a href="index.html" class="logo"><img src="img/logo.png" alt="" width="138" height="70"></a></li>
+					<li><a href="#">карта штата</a></li>
+					<li><a href="hotels.html">гостиницы</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<form  class="search-form-container search-form--active" action="/echo" method="post">
 			<label for="begin-date">дата заезда:<i class="icon-calendar"></i></label>
 			<input type="date" name="begin-date" id="begin-date">
 			<label for="end-date">дата выезда:<i class="icon-calendar"></i></label>
@@ -28,7 +40,20 @@
 				</div>
 			</div>
 			<a class="submit-btn" href="#">Найти</a>
-		</div>
-	</form>		
+		</form>
+
+
+		<footer class="footer-wrapper--normal  clearfix">
+			<div class="hashtag  col-4">#visitsedona </div>
+			<div class="social  col-4">
+				<a href="#" class="social-btn"><i class="icon-twitter"></i></a>
+     		<a href="#" class="social-btn"><i class="icon-facebook"></i></a>
+    		<a href="#" class="social-btn"><i class="icon-youtube"></i></a>
+			</div>
+			<div class="copyrights  col-4">
+			</div>	
+		</footer>
+	</div>
 </body>
 </html>
+
