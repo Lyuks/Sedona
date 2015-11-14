@@ -86,9 +86,11 @@ body {
 }
 .col-4{
 	width: 33.33%;
+  float: left;
 }
 .col-8{
 	width: 66.66%;
+  float: left;
 }
 .main-navigation{
     width: 100%;
@@ -320,7 +322,6 @@ body {
 }
 
 .hashtag{
-    float: left;
     padding-top: 50px;
     text-align: center;
     font-size: 21px;
@@ -328,32 +329,56 @@ body {
     line-height: 26px;
 }
 .social{
-    float: left;
     text-align: center;
     vertical-align: bottom;
     padding-top: 40px;
 }
 .copyrights{
-	float: right;
     padding-top: 45px;
     text-align: center;
-    background: url('../img/copyright.png') no-repeat 50% 100%;
-    width: 33%;
-    height: 39px;
 }
-.copyrights:hover{
+/*.copyrights:hover{
 	background-image: url('../img/copyrights-hover.png');
 }
 .copyrights:active{
 	background-image: url('../img/copyrights-active.png');
+}*/
+
+.copyright__link {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
 }
+
+.copyright__link:after {
+  content: '';
+  width: 115px;
+  height: 40px;
+  background: url(../img/copyright.png) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: -40px 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.copyright__link span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .social-btn{
-	position: relative;
-	width: 46px;
-	height: 48px;
-	display: inline-block;
-	background-color: #81b3d2;
+  display: inline-block;
+  background-color: #81b3d2;
+  margin-right: 5px;
+  color: white;
+  font-size: 19px;
+  line-height: 20px;
+  text-decoration: none;
+  padding: 15px 0;
+  width: 48px;
 }
+
 .social-btn:hover{
 	background-color: #669ec0;
 }
